@@ -8,7 +8,7 @@ app.include_router(router)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Adjust for your frontend's
+    allow_origins=["*"],  # Adjust for your frontend's
     allow_methods=["*"],
     allow_headers=["*"],
 )
